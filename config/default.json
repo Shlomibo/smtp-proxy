@@ -1,6 +1,10 @@
 {
 	"listen": {
-		"secure": true
+		"port": 465
 	},
-	"server": {}
+	"server": {
+		"port": 465,
+		"host": "smtp.gmail.com",
+		"secure": true
+	}
 }

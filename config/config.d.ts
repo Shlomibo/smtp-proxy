@@ -1,10 +1,14 @@
 declare module 'config' {
 	interface ListeningConfiguration {
-		secure: boolean;
+		port: number;
 		name?: string;
 		authMethods?: string[];
 	}
-	interface ServerConfiguration {}
+	interface ServerConfiguration {
+		port: number;
+		host: string;
+		secure: boolean;
+	}
 
 	export const listen: ListeningConfiguration, server: ServerConfiguration;
 }
